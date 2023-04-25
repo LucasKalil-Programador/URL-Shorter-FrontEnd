@@ -1,4 +1,4 @@
-# # Encurtador de URL (URL Shortener - Frontend)
+# Encurtador de URL (URL Shortener - Frontend)
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/LucasKalil-Programador/URL-Shorter-FrontEnd/blob/7d5bd3c837a7bc5cfe06456bb08f77f217a10f27/LICENSE)
 

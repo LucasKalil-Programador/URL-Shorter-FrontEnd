@@ -1,0 +1,36 @@
+
+.URLOutput-div {
+  margin: 80px 0 0 0;
+}
+
+.URLOutput-text {
+  padding: 15px;
+  color: #00FF00;
+  border-radius: 10px;
+  background-color: #6D5D6E;
+}
+
+.URLOutput.CopyButton {
+  padding: 10px;
+  margin: 30px 10vw;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #F4EEE0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.URLOutput.CopyButton:active {
+  background-image: #F4EEE0;
+  border-color: #6D5D6E;
+  outline: none;
+}
+
+.URLOutput.CopyButton:focus {
+  box-shadow: #6D5D6E 0 0 0 3px;
+  outline: none;
+}

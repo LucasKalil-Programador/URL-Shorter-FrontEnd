@@ -1,0 +1,121 @@
+.URLInput.DivInput {
+  margin-inline: 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Input */
+
+.URLInput.Input {
+  background-color: #F4EEE0;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.URLInput.Input:focus {
+  outline: none;
+  border-color: #F4EEE0;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 8px #F4EEE0;
+}
+
+
+/* InputDiv */
+
+.InputDiv {
+  margin-top: 15px;
+  margin-inline: 10vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+/* DateInput */
+
+.URLInput.DateInput {
+  background-color: #ccc6b8;
+  width: calc(100% - 20px);
+  height: 40px;
+  margin: 10px;
+  margin-left: 0;
+  text-align: center;
+  font-size: 15px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  border-radius: 10px;
+  border-color: transparent;
+  
+}
+
+.URLInput.DateInput:focus {
+  outline: none;
+  border-color: #ccc6b8;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 8px #ccc6b8;
+}
+
+.URLInput.NumberInput {
+  background-color: #ccc6b8;
+  width: calc(100% - 20px);
+  height: 40px;
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.URLInput.NumberInput:focus {
+  outline: none;
+  border-color: #ccc6b8;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 8px #ccc6b8;
+}
+
+
+/* Shorten Button */
+
+.URLInput.ShortenButton {
+  margin: 10px;
+  font-size: 20px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #F4EEE0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.URLInput.ShortenButton:active {
+  background-image: #F4EEE0;
+  border-color: #6D5D6E;
+  outline: none;
+}
+
+.URLInput.ShortenButton:focus {
+  box-shadow: #6D5D6E 0 0 0 3px;
+  outline: none;
+}
+
+
+/* Loading icon */
+
+.URLInput.loading-icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #444;
+  border-bottom-color: #888;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

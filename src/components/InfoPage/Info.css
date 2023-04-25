@@ -1,0 +1,35 @@
+.Info {
+  position: absolute;
+  display: grid;
+  width: 100%;
+  grid-template-areas: 
+  "iL iR"
+  "f  f";
+  grid-template-columns: 1fr 1fr;
+  left: 0;
+  text-align: center;
+}
+
+.InfoValue {
+  background-color: #a9a69c;
+  border-radius: 20px;
+  margin: 30px 10%;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.InfoValue.Left {
+  grid-area: iL;
+}
+
+
+.InfoValue.Right {
+  grid-area: iR;
+}
+
+.InfoValue.Status {
+  grid-area: f;
+  margin: 30px 30%;
+}
+
+

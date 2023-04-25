@@ -1,0 +1,6 @@
+.ShorterPage.Main {
+  width: 100%;
+  position: absolute;
+  top: max(20vh, 80px);
+  left: 0;
+}

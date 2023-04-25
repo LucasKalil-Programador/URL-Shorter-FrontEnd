@@ -1,0 +1,86 @@
+.InfoPage.Div {
+  width: calc(100% - 20vw);
+  position: absolute;
+  top: max(20vh, 80px);
+  left: 0;
+  margin-inline: 10vw;
+  display: grid;
+  grid-template:
+  "a a a" 
+  ". b ."
+  "i i i";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+/* Input */
+
+.InfoPage.Input {
+  grid-area: a;
+  background-color: #F4EEE0;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.InfoPage.Input:focus {
+  outline: none;
+  border-color: #F4EEE0;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 8px #F4EEE0;
+}
+
+
+/* SearchButton */
+
+.InfoPage.SearchButton {
+  grid-area: b;
+  margin: 10px;
+  font-size: 20px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #F4EEE0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.InfoPage.SearchButton:active {
+  background-image: #F4EEE0;
+  border-color: #6D5D6E;
+  outline: none;
+}
+
+.InfoPage.SearchButton:focus {
+  box-shadow: #6D5D6E 0 0 0 3px;
+  outline: none;
+}
+
+
+/* Loading icon */
+
+.InfoPage.loading-icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #444;
+  border-bottom-color: #888;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.Info {
+  grid-area: i;
+}

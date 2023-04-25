@@ -1,0 +1,10 @@
+body {
+  background-color: #393646;
+}
+
+
+div {
+  text-align: center;
+  font-size: 20px;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+}
